@@ -14,4 +14,4 @@ A piece of code that aggregates log file data:
 
 run `ruby start.rb` to run the code.
 
-There are tests <3: `rspec`
+There are tests <3: `rspec`. I did not get it the first time so I updated the sample log file for test using data I actually can compute and can compare.
