@@ -1,10 +1,10 @@
 class LogFileParser
-  USER_ID_REGEX = "(.*?(\s*|\/))"
+  USER_ID_REGEX = "(.[^\/]+)"
   ACCEPTED_ENDS = [
-    ['count_pending_messages', ['GET']],
-    ['get_messages', ['GET']],
-    ['get_friends_progress', ['GET']],
-    ['get_friends_score', ['GET']],
+    ['\/count_pending_messages', ['GET']],
+    ['\/get_messages', ['GET']],
+    ['\/get_friends_progress', ['GET']],
+    ['\/get_friends_score', ['GET']],
     ['', ['GET', 'POST']]
   ]
   ACCEPTED_LOGS = ACCEPTED_ENDS.inject([]) do |items, ends|
