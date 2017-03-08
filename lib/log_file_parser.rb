@@ -30,7 +30,7 @@ class LogFileParser
     @data.each do |key, value|
       printf *[
         "%50s %-10s %-20d %-25d %-25s %s\n",
-        key.source.gsub('method=', '').gsub('path=', '').gsub(USER_ID_REGEX, '{user_id}').strip,
+        key.source.gsub('method=', '').gsub('path=', '').gsub(USER_ID_REGEX, '{user_id}').gsub('\/', '/').strip,
         value[:count],
         CollectionMath.mean(value[:response_times]),
         CollectionMath.median(value[:response_times]),

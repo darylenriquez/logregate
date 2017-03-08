@@ -44,12 +44,12 @@ describe LogFileParser do
     let(:expected_output) {
       """
                                               path count      response time(mean)  response time(median)     response time(mode)       hero dyno
-    GET /api/users/{user_id}count_pending_messages 2430       25                   15                        11                        web.2
-              GET /api/users/{user_id}get_messages 652        62                   32                        23                        web.11
-      GET /api/users/{user_id}get_friends_progress 1117       111                  51                        35                        web.5
-         GET /api/users/{user_id}get_friends_score 1533       228                  143                       67                        web.7
-                          GET /api/users/{user_id} 561        52                   26                        26                        web.10
-                         POST /api/users/{user_id} 2036       82                   46                        23                        web.11
+   GET /api/users/{user_id}/count_pending_messages 3          13                   3                         3                         web.12
+             GET /api/users/{user_id}/get_messages 3          15                   6                         6                         web.12
+     GET /api/users/{user_id}/get_friends_progress 1          33                   33                        33                        web.12
+        GET /api/users/{user_id}/get_friends_score 1          2                    2                         2                         web.12
+                          GET /api/users/{user_id} 3          12                   2                         2                         web.12
+                         POST /api/users/{user_id} 1          4                    4                         4                         web.12
 """
     }
 
